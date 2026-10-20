@@ -16,10 +16,12 @@ const maxIntentos=10;
 console.log(maxIntentos);
 
 // --- Entrada del usuario ---
-let nombreUsuario = prompt("¿Cómo te llamas?");
+let nombreUsuario='';
+//nombreUsuario = prompt("¿Cómo te llamas?");
 
 // Pide la edad al usuario con prompt() y guárdala en 'edadUsuario'
-let edadUsuario = prompt("¿Cuántos años tienes?");
+let edadUsuario='';
+//edadUsuario = prompt("¿Cuántos años tienes?");
 
 // --- Salida al usuario ---
 // Muestra un alert que diga: "Hola [nombre], tienes [edad] años."
@@ -34,3 +36,42 @@ console.log("Edad:", edadUsuario);
 console.log("Tipo de dato de edad:", typeof edadUsuario);
 
 // Pregúntate: ¿por qué el tipo no es "number"?
+
+
+
+let a = 20;
+let b = 7;
+
+console.log('Suma:', a + b);
+console.log('Resta:', a - b);
+// Completa las 3 operaciones que faltan:
+
+// - Multiplicación (usa *)
+console.log('Multiplicacion:', a * b);
+// - División (usa /)
+console.log('Division:', a / b);
+// - Módulo (usa % — devuelve el residuo de la división)
+console.log('Modulo:', a % b);
+
+
+
+// --- ¿Qué resultado esperas? ---
+console.log('5' + 3);    // 53
+console.log(5 + 3);      // 8
+console.log('5' - 3);    // ¿Qué pasa aquí?
+
+
+
+let nom = "Paul";
+let ed = 30;
+let saludo2=`Hola ${nom}, tienes ${ed} años.`
+
+console.log(saludo2);
+
+
+
+// --- Calculadora de edad ---
+let anioActual = 2026;
+let anioNacimiento = anioActual - Number(ed);
+let mensaje=`Hola ${nom}, naciste aproximadamente en ${anioNacimiento}`;
+console.log(mensaje);
