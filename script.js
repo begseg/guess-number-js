@@ -73,5 +73,15 @@ console.log(saludo2);
 // --- Calculadora de edad ---
 let anioActual = 2026;
 let anioNacimiento = anioActual - Number(ed);
-let mensaje=`Hola ${nom}, naciste aproximadamente en ${anioNacimiento}`;
+
+let ciudad=prompt("En que ciudad naciste?");
+let anio100=anioNacimiento+100;
+let mensaje=`Hola ${nom}, naciste aproximadamente en ${anioNacimiento}, en la ciudad de ${ciudad}, cumpliras 100 el anio ${anio100}`;
 console.log(mensaje);
+
+let nuevaEdad=prompt("Ingresa edad");
+let mensajeEdad = nuevaEdad >= 18
+  ? "Eres mayor de edad"
+  : "Eres menor de edad";
+
+console.log(mensajeEdad);
