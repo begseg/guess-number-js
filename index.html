@@ -5,9 +5,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adivina el Número</title>
+    <title>Adivina el Número | Tech Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     <!--     <script src="script2.js"></script>
         <script src="descuentos2.js"></script> -->
 </head>
@@ -17,7 +19,7 @@
     <p class="subtitle">Estoy pensando en un número del 1 al 100...</p>
 
     <div class="controls">
-      <input type="number" id="inputIntento" min="1" max="100" placeholder="?">
+      <input type="number" id="inputIntento" min="1" max="100" placeholder="?" autocomplete="off" aria-label="Tu intento">
       <button id="btnAdivinar">Adivinar</button>
     </div>
 
